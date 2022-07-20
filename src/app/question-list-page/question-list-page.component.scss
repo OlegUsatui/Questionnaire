@@ -1,0 +1,40 @@
+.list {
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+   .left-side {
+     width: 100%;
+     margin: 0 20px;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     gap: 25px;
+
+     app-question-list-item {
+       width: 100%;
+     }
+   }
+
+    .right-side {
+      width: 100%;
+      margin: 0 20px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 25px;
+
+      app-question-list-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.empty {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+}

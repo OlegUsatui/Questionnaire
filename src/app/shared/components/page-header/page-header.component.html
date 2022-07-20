@@ -1,0 +1,22 @@
+<div class="header">
+  <div>
+    <span class="logo">Questionnaire</span>
+  </div>
+
+  <div>
+    <ul class="header-list">
+      <li class="header-list-item" routerLink="/list" [routerLinkActive]="'active'">
+        <mat-icon>list_alt</mat-icon>
+        <p class="text">Questions</p>
+      </li>
+      <li class="header-list-item" routerLink="/management" [routerLinkActive]="'active'">
+        <mat-icon>manage_accounts</mat-icon>
+        <p class="text">Management</p>
+      </li>
+      <li class="header-list-item" routerLink="/create" [routerLinkActive]="'active'">
+        <mat-icon>add_box</mat-icon>
+        <p class="text">Create question</p>
+      </li>
+    </ul>
+  </div>
+</div>

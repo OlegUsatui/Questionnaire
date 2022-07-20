@@ -1,0 +1,27 @@
+<div class="list" *ngIf="questions.length; else empty">
+  <div class="list-content">
+    <div class="left-side">
+      <h2>Unanswered Questions</h2>
+
+        <ng-container *ngFor="let item of questions">
+          <ng-container *ngIf="!item.answer.length">
+           <app-question-list-item [question]="item" (update)="updateQuestions($event)"></app-question-list-item>
+          </ng-container>
+        </ng-container>
+    </div>
+
+    <div class="right-side">
+      <h2>Answered Questions</h2>
+
+      <ng-container *ngFor="let item of questions">
+        <ng-container *ngIf="item.answer.length">
+          <app-question-list-item [question]="item" [isAnswered]="true" (update)="updateQuestions($event)"></app-question-list-item>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #empty>
+  <h2 class="empty">It's still empty here...</h2>
+</ng-template>

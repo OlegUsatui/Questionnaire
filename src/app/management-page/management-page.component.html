@@ -1,0 +1,13 @@
+<div class="management">
+  <div class="management-content">
+    <ng-container *ngIf="questions.length; else empty">
+      <ng-container *ngFor="let item of questions; let i = index">
+        <app-question-item (delete)="delete(i)" [question]="item"></app-question-item>
+      </ng-container>
+    </ng-container>
+
+    <ng-template #empty>
+      <p class="empty">There are no questions yet</p>
+    </ng-template>
+  </div>
+</div>

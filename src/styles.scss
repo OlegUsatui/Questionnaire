@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary-blue: #5bccf6;
+  --color-main-bg-yellow: #fcde67;
+  --color-main-text: #000000;
+  --color-second-text: cornsilk;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--color-main-bg-yellow);
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
